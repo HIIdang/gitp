@@ -2,10 +2,33 @@
 <html>
 <head>
 <title>HDsWP</title>
+<style>
+body {background-color : #cad4dc;
+color : black;
+margin-left : 40px;
+margin-right : 40px; }
+h3 {text-align : center;
+color : black;
+font-size : 25px; }
+hr { height : 3px;
+border : solid grey;
+background-color : grey }
+span { color : white;
+font-size : 20px; }
+</style>
+<script>
+function show() {
+document.getElementById("fig").src="hd.gif";
+}
+function hide() {
+document.getElementById("fig").src="";
+}
+</script>
 </head>
 <body>
-<h3>Hidang</h3>
+<h3 onmouseover="show()" onmouseout="hide()">Hidang</h3>
 <hr>
+<div><img id="fig" src=""><div>
 <span>nothing</span>
 test.
 </body>
